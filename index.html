@@ -38,9 +38,16 @@
     <!-- ============ Fonts ============ -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Unbounded:wght@900&display=swap" rel="stylesheet">
     
-    <!-- ============ Fonts ============ -->
+    <!-- ============ Link Direction ============ -->
+    <!-- If the link was kadmyid.pages.dev: it will directly to kad.my.id (instantly) -->
     <script>
       if (window.location.hostname === "kadmyid.pages.dev") {
+        window.location.replace("https://kad.my.id" + window.location.pathname + window.location.search);
+      }
+    </script>
+    <!-- If the link was www.kad.my.id: it will directly to kad.my.id (instantly) -->
+    <script>
+      if (window.location.hostname === "www.kad.my.id") {
         window.location.replace("https://kad.my.id" + window.location.pathname + window.location.search);
       }
     </script>
@@ -57,8 +64,8 @@
         "description": "A private collective of independent content creators working together, sharing ideas, and building things on the internet.",
         "email": "contact@kad.my.id",
         "sameAs": [
-            "https://x.com/yourhandle",
-            "https://youtube.com/@yourchannel"
+            "https://x.com/kadmyid",
+            "https://youtube.com/@kadmyid"
         ]
     }
     </script>
