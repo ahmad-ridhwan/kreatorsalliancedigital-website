@@ -1,0 +1,8 @@
+# Redirect Cloudflare Pages default domain to Custom Domain
+https://*.pages.dev/* https://kad.my.id/:splat 301
+
+# Redirect www to non-www
+https://www.kad.my.id/* https://kad.my.id/:splat 301
+
+# Force HTTPS on the main domain
+http://kad.my.id/* https://kad.my.id/:splat 301
